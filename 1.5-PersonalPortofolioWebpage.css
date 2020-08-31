@@ -1,23 +1,34 @@
 
-html, body {
-max-width: 100vw;
+
+body {
+width: 100%;
 overflow-x: hidden;
 }
+
+
 @media screen and (max-width: 1000px) {
 .project-tile{
 min-width:40%;
-height:50vh;
+min-height:40vw;
 }
 }
+
+
 @media screen and (max-width: 800px) {
 .project-tile{
 min-width:80%;
-height:50vh;
+min-height:75vw;
+margin-top:2vw;
 }
 }
+
+
 html{
 background-color:#121212;
+width:100%;
 }
+
+
 #navbar{
 position:fixed;
 top:0;
@@ -30,149 +41,234 @@ z-index:2;
 display:flex;
 flex-wrap:wrap;
 }
+
+
 .nav-link{
-top:0;
-right:0;
-display:block;
-margin-top:auto;
-margin-bottom:auto;
-height:100%;
-display:block;
-margin: 0 10vw ;
-color:white;
-text-align:center;
-text-decoration:none;
-font-size:25px;
-margin-top:2vh;
+float: right;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+transition: transform .2s;
+font-family: 'Raleway', sans-serif;
+font-weight:700;
 }
 
+
 .nav-link:hover{
-	opacity: 0.7;
+opacity: 0.7;
+transform: scale(1.1);
 }
+
+
 #welcome-section{
-height:62vh;
-margin-top:40vh;
+height:100vh;
 }
+
+
 h1{
-margin: 0 auto ;
+padding-top: 35vh ;
 color:white;
 text-align:center;
-font-size:40px;
+font-size:60px;
+font-family: 'Oswald', sans-serif;
+font-weight:300;
 }
+
+
 h2{
 color:white;
 text-align:center;
-font-size:40px;
+font-size:50px;
 width:100vw;
+font-family: 'Oswald', sans-serif;
+font-weight:300;
 }
+
+
 #projects{
-position: absolute;
+padding-top:8vh;
+padding-left:20px;
 left: 0;
 right: 0;
-background-color:#212121;
-width:100vw;
+background-color:#121212;
+width:100%;
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
 }
+
+
 .project-tile{
 width:20vw;
-height:50vh;
+height:27vw;
 margin:2vw;
 background-image: linear-gradient(60deg, #80deea , #f48fb1);
 justify-content:center;
 }
+
+
+.preview{
+width:100%;
+margin-top:5px;
+margin-bottom:5px;
+filter: grayscale(100%);
+transition: transform 0.2s;
+height:40%
+}
+
+
+img:hover{
+filter: grayscale(0%);
+}
+
+
 .project-link{
 margin-left:auto;
 margin-right:auto;
-margin-top:5vh;
+margin-top:2vh;
 color: white;
 text-align: center;
 text-decoration: none;
 display: block;
-background-color:#212121;
-padding:10px 5px;
-width:50%;
+width:100%;
+transition: transform .2s;
+max-height:10%;
+font-family: 'Raleway', sans-serif;
 }
 
+
 .project-link:hover{
-	opacity: 0.7;
+opacity: 0.7;
+transform: scale(1.1);
 }
+
 
 .buttons{
 margin-left:auto;
 margin-right:auto;
-margin-top:5vh;
-color: white;
+margin-top:5px;
+color: #121212;
 text-align: center;
 text-decoration: none;
 display: block;
-background-color:#212121;
+background-color:white;
 padding:10px 5px;
 width:50%;
+transition: transform .2s;
+border-radius:5px;
+font-family: 'Raleway', sans-serif;
 }
+
 
 .buttons:hover{
-	opacity: 0.7;
+opacity: 0.7;
+transform: scale(1.1);
+border-radius:0;
 }
 
+
 #container{
-height:300px;
 width:100%;
 background-color: #212121;
 }
+
+
 #panel0 {
 z-index:0;
+height:300px;
+background-color:#121212;
 position: absolute;
-width:100%;
+width:5%;
+left:0;
 }
+
+
 #panel1 {
 z-index:-1;
 position: absolute;
-width:98%
+width:98%;
+left:0;
 }
+
+
 #panel2 {
 z-index:-1;
 position: absolute;
 width:98%;
+left:0;
 }
+
+
 #panel3 {
 z-index:-1;
 position: absolute;
 width:98%;
+left:0;
 }
+
+
 #panel4 {
 z-index:-1;
 position: absolute;
 width:98%;
-}
-#contact-section{
-position:absolute;
 left:0;
-margin-top:120vh;
-width:100vw;
-height: 50vh;
-background-image: linear-gradient(to bottom, #212121, #121212);
-justify-content:center;
-
 }
+
+
+#contact-section{
+padding-top:5vh;
+z-index:2;
+width:100%;
+height: 50vh;
+background-color:#121212;
+justify-content:center;
+display:block;
+}
+
+
 #h2contact{
 display:block;
 margin-top:10px;
 color:white;
 text-align:center;
 }
+
+
 .contact{
 display:block;
-margin: 0 10vw ;
+margin: 0 auto ;
 color:white;
 text-align:center;
 text-decoration:none;
 font-size:25px;
-padding-top:5vh;
+padding-top:2vh;
+padding-bottom:2vh;
+transition: transform .2s;
+font-family: 'Raleway', sans-serif;
+width:30vw;
+}
+
+
+.contact:hover{
+opacity: 0.7;
+transform: scale(1.1);
+}
+
+footer{
+	background-color:#121212;
+	
+}
+
+footer, a{
+font-family: 'Raleway', sans-serif;
+color:white;
+text-decoration:none;
+text-align:center;	
 
 }
 
-.contact:hover{
-	opacity: 0.7;
+footer,a:hover{
+opacity: 0.7;
 }
